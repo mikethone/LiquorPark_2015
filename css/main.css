@@ -87,17 +87,18 @@ body {
     background-image: url(../img/bg.jpg);
     font-family: 'Raleway', sans-serif;
     font-weight: 500;
+    color:#231F20;
 }
 address {
     font-style: normal;
 }
-h2, header address, header .tel {
+h2, h3, header address, header .tel {
     font-family: 'bitter', serif;
     font-weight: 700;
     font-size: 21px;
 }
-h2.col-lg-12 {
-    padding:0;
+h2 {
+    color:#293C58;
 }
 .tableLayout {
     display: table;
@@ -109,6 +110,12 @@ h2.col-lg-12 {
     display: table-cell;
     float: none;
     height: 100%;
+}
+.alpha {
+    padding-left: 0;
+}
+.omega {
+    padding-right: 0;
 }
 /*sprite*/
 
@@ -156,23 +163,84 @@ header .tel {
     height: 420px;
     background: white;
 }
+/*hours and location*/
+
+.hoursContain {
+    height: 450px;
+    padding: 15px;
+    color: white;
+    background: #576A68;
+}
+.hoursContain th, .hoursContain td {
+    padding: 5px;
+}
+.hoursContain th {
+    text-align:left;
+    padding-left:0;
+}
+/*events container*/
+
+.eventsContainer {
+    padding-left: 0;
+}
+.eventsContainer .listing {
+    height: 100px;
+    background-color: #B83D34;
+    background-blend-mode: multiply;
+    padding: 10px 15px;
+    margin-bottom: 20px;
+    color: white;
+}
+.eventsContainer .listing h3 {
+    font-size: 18px;
+    font-weight: normal;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
 /*wine club*/
+
 #Wine_Club h3 {
-    margin:0;
+    margin: 0;
+    font-size: 13px;
+}
+.wineClubContain {
+    padding-left: 30px;
+    padding-right: 0;
 }
 .aboutWineClub {
     font-size: 13px;
+    background: #2B3E50;
+    color: white;
+    padding: 10px;
 }
 .wineClubImg {
-      background: url(../img/wine.png) no-repeat top center; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+    background: url(../img/wine.png) no-repeat top center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 /*press*/
 
-.pressContainer .listing {} @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+.pressContainer {
+    background: url(../img/pattern_bg.png) repeat top center;
+    height: 100%;
+    float: left;
+    padding: 10px 0;
+}
+.pressContainer .listing {
+    background-color: rgba(255, 255, 255, .8);
+    height: 200px;
+    padding: 10px;
+    font-size: 13px;
+}
+.pressContainer .listing h3 {
+    margin-top:0;
+    margin-botom:10px;
+}
+/*footer*/
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
     /* Retina-specific stuff here */
     
     .sprite {
